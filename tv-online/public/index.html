@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TV Online Vision+</title>
+  <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>TV Online Vision+</h1>
+    <p class="subtitle">RCTI • SCTV • ANTV • GTV • TRANS • NET • dll</p>
+
+    <div class="player">
+      <video id="video-player" class="video-js vjs-default-skin" controls preload="auto" data-setup='{}'></video>
+    </div>
+
+    <div class="tabs">
+      <button class="tab active" data-category="all">SEMUA</button>
+      <button class="tab" data-category="mnc">MNC GROUP</button>
+      <button class="tab" data-category="lainnya">LAINNYA</button>
+    </div>
+
+    <div class="channel-grid" id="channels"></div>
+
+    <div class="footer">
+      <small>Streaming via proxy serverless • Untuk edukasi & penggunaan pribadi</small>
+    </div>
+  </div>
+
+  <script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <script src="script.js"></script>
+</body>
+</html>
